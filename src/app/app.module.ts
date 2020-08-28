@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CurrentWeatherComponent } from './components/current-weather/current-weather.component';
+import { MaterialModule } from './shared/material/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
     declarations: [
@@ -16,7 +18,9 @@ import { CurrentWeatherComponent } from './components/current-weather/current-we
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        HttpClientModule
+        HttpClientModule,
+        MaterialModule,
+        FlexLayoutModule
     ],
     providers: [],
     bootstrap: [AppComponent]
